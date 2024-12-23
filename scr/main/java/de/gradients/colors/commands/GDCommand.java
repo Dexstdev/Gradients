@@ -9,8 +9,8 @@ import org.bukkit.entity.Player;
 
 public class GDCommand implements CommandExecutor {
 
-    private static final String NO_PERMISSION_MESSAGE = nextColors.getPrefix() + " §cYou do not have permission to perform this command!";
-    private static final String USAGE_MESSAGE = nextColors.getPrefix() + " §9Usage§8: §f/gd §7<§fundo§7>";
+    private static final String NO_PERMISSION_MESSAGE = gradients.getPrefix() + " §cYou do not have permission to perform this command!";
+    private static final String USAGE_MESSAGE = gradients.getPrefix() + " §9Usage§8: §f/gd §7<§fundo§7>";
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
