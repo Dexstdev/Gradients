@@ -1,6 +1,6 @@
 package de.gradients.colors.commands;
 
-import de.gradients.colors.nextColors;
+import de.gradients.colors.Gradients;
 import de.gradients.colors.utils.Undo;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
