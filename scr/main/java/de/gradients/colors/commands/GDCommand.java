@@ -57,23 +57,23 @@ public class GDCommand implements CommandExecutor {
                 undo.performUndo();
                 Undo.undoPlayers.get(player).remove(Undo.undoPlayers.get(player).size() - 1);
 
-                player.sendMessage(nextColors.getPrefix() + " §9Undo performed!");
+                player.sendMessage(gradients.getPrefix() + " §9Undo performed!");
             } else {
-                player.sendMessage(nextColors.getPrefix() + " §cThere is nothing left to undo!");
+                player.sendMessage(gradients.getPrefix() + " §cThere is nothing left to undo!");
             }
         } else if (args.length == 2) {
             try {
                 int undoInt = Integer.parseInt(args[1]);
                 if (undoInt < 1 || undoInt > 100) {
-                    player.sendMessage(nextColors.getPrefix() + " §9Usage§8: §f/gd undo §7<§f1§8-§f100§7>");
+                    player.sendMessage(gradients.getPrefix() + " §9Usage§8: §f/gd undo §7<§f1§8-§f100§7>");
                     return;
                 }
 
                 if (Undo.undoPlayers.containsKey(player) && !Undo.undoPlayers.get(player).isEmpty()) {
-                    player.sendMessage(nextColors.getPrefix() + " §9Performing " + undoInt + " undo actions...");
+                    player.sendMessage(gradients.getPrefix() + " §9Performing " + undoInt + " undo actions...");
                     for (int i = 0; i < undoInt; i++) {
                         if (Undo.undoPlayers.get(player).isEmpty()) {
-                            player.sendMessage(nextColors.getPrefix() + " §cThere is nothing left to undo!");
+                            player.sendMessage(gradients.getPrefix() + " §cThere is nothing left to undo!");
                             break;
                         }
 
@@ -82,13 +82,13 @@ public class GDCommand implements CommandExecutor {
                         Undo.undoPlayers.get(player).remove(Undo.undoPlayers.get(player).size() - 1);
                     }
                 } else {
-                    player.sendMessage(nextColors.getPrefix() + " §cThere is nothing left to undo!");
+                    player.sendMessage(gradients.getPrefix() + " §cThere is nothing left to undo!");
                 }
             } catch (NumberFormatException e) {
-                player.sendMessage(nextColors.getPrefix() + " §cInvalid number! Please use a valid integer.");
+                player.sendMessage(gradients.getPrefix() + " §cInvalid number! Please use a valid integer.");
             }
         } else {
-            player.sendMessage(nextColors.getPrefix() + " §9Usage§8: §f/gd undo §7<§f1§8-§f100§7>");
+            player.sendMessage(gradients.getPrefix() + " §9Usage§8: §f/gd undo §7<§f1§8-§f100§7>");
         }
     }
 }
