@@ -1,0 +1,6 @@
+main: de.gradients.colors
+name: Gradients
+author: [nextround, dexstdev]
+version: 1.0.0
+description: simple gradients.
+version-api: 1.12
