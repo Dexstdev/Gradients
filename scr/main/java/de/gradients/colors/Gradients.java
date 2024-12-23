@@ -56,8 +56,8 @@ public class Gradients extends JavaPlugin {
 
     /* Register Commands */
     public void registerCommands() {
-        getCommand("gd").setExecutor(new NCCommand());
-        getCommand("gdu").setExecutor(new NCCommand());
+        getCommand("gd").setExecutor(new GDCommand());
+        getCommand("gdu").setExecutor(new GDCommand());
     }
 
     /* Register all listeners */
