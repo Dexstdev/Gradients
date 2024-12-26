@@ -27,4 +27,17 @@ public class OtherListeners implements Listeners {
             FileManager.resetPlayerConfigFile(player.getUniqueId());
         }
     }
+
+    /**
+     * Maneja el evento de cuando un jugador intercambia items entre manos
+     */
+    @EventHandler
+    public void onPlayerSwapHandItemsEvent(PlayerSwapHandItemsEvent event) {
+        Player player = event.getPlayer();
+
+        // Verificar si el jugador tiene el permiso necesario
+        if (player.hasPermission("gradients.interact.use")) {
+            ItemStack offHandItem = event.getOffHandItem();
+        }
+    }
 }
