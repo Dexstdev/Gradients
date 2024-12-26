@@ -15,7 +15,7 @@ public class GDCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (!(sender instanceof Player)) {
-            sender.sendMessage(nextColors.getPrefix() + " §cOnly players can use this command!");
+            sender.sendMessage(gradients.getPrefix() + " §cOnly players can use this command!");
             return false;
         }
 
