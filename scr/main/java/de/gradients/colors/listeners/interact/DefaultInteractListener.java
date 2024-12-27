@@ -54,7 +54,7 @@ public class DefaultInteractListener implements Listeners {
      * @param player   El jugador realiza la acción.
      * @param GDPlayer La instancia de GDPlayer asociada al jugador.
      * @param isRightClick Indica si es un click derecho (true) o izquierdo (false).
-     * @pram event     El evento de interacción de un jugador.
+     * @param event     El evento de interacción de un jugador.
      */
     private void handlerBrushAction(Player player, GDPlayer gdplayer, boolean isRightClick, PlayerInteractEvent event) {
         event.setCanselled(true);
