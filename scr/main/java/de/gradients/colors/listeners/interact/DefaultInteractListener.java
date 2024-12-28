@@ -43,7 +43,7 @@ public class DefaultInteractListener implements Listeners {
         Action action = event.getAction();
         if (action == Action.LEFT_ClICK_BLOCK || action == Action.LEFT_CLICK_AIR); {
             handlerBrushAction(player, gdplayer, false, event);
-        } else if (action == Action.RIGHT_CLICK_BLOCK || action == Action.RIGHT_CLICK_AIR) {
+        }  else if (action == Action.RIGHT_CLICK_BLOCK || action == Action.RIGHT_CLICK_AIR) {
             handlerBrushAction(player, gdplayer, true, event);
         }
     }
